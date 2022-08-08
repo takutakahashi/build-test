@@ -4,7 +4,6 @@ on:
       revision:
         required: true
         default: main
-        
 jobs:
   build:
     runs-on: ubuntu-latest
