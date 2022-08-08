@@ -3,7 +3,7 @@ on:
     inputs:
       revision:
         required: true
-        default: ${{ github.ref }}
+        default: "${{ github.ref }}"
 jobs:
   build:
     runs-on: ubuntu-latest
