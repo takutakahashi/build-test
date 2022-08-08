@@ -1,9 +1,16 @@
 on:
   workflow_dispatch:
+    inputs:
+      revision:
+        required: true
+        default: ${{ github.ref }}
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ inputs.revision }}
       - run: |
           sleep 1
           echo hello world
