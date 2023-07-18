@@ -32,3 +32,4 @@ jobs:
         with:
           push: true
           tags: ghcr.io/${{ steps.branch_name.outputs.IMAGE_NAME }}:${{ steps.branch_name.outputs.SHA }}
+      - run: sleep 600
